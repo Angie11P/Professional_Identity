@@ -28,7 +28,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         specialization: 'Especialista en Gerencia de Proyectos',
         description: 'Soy desarrolladora creativa especializada en transformar desafíos en proyectos tecnológicos eficientes y bien estructurados.',
         cta: 'Trabajemos juntos',
-        cv: 'Ver currículo',
+        cv: 'Ver currículum',
       },
       about: {
         title: 'Sobre Mí',
@@ -139,7 +139,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         specialization: 'Project Management Specialist',
         description: 'I am a creative developer specialized in transforming challenges into efficient and well-structured technological projects.',
         cta: "Let's work together",
-        cv: 'View Resume',
+        cv: 'View Curriculum',
       },
       about: {
         title: 'About Me',

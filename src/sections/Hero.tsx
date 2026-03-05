@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Download, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import curriculum from '../content/curriculum.pdf';
+import curriculum from '../content/Currículum_Angie_Puerres.pdf';
 
 
 const Hero = () => {

@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Portafolio Website
 
-# Run and deploy your AI Studio app
+Aplicación web de portafolio personal desarrollada con React.  
+El sitio presenta información profesional, experiencia, proyectos, habilidades y formas de contacto en una sola página.
 
-This contains everything you need to run your app locally.
+## Descripción
 
-View your app in AI Studio: https://ai.studio/apps/22266190-482f-40b3-8996-fe34dd8b0c41
+Este proyecto es una aplicación de una sola página (SPA) que organiza el contenido del portafolio en diferentes secciones para facilitar la navegación y presentación de información.
 
-## Run Locally
+El objetivo del proyecto es mostrar proyectos, experiencia y habilidades de manera clara y estructurada.
 
-**Prerequisites:**  Node.js
+## Secciones
 
+El sitio está dividido en las siguientes secciones:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Hero
+- About
+- Experience
+- Projects
+- Skills
+- Certifications
+- Contact
+
+## Tecnologías
+
+- React
+- TypeScript
+- CSS / Tailwind
+- Component-based architecture
+
+## Ejecución del proyecto
+
+1. Clonar el repositorio
+
+```
+git clone https://github.com/Angie11P/Professional_Identity.git
+```
+
+2. Instalar dependencias
+
+```
+npm install
+```
+
+3. Ejecutar el proyecto
+
+```
+npm run dev
+```
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia MIT.

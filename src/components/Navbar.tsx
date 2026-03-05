@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Globe, Moon, Sun } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { cn } from '../lib/utils';
+import logoIcon from '../img/ap_new.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +33,9 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
+          className="flex items-center"
         >
-          AP.
+          <img src={logoIcon} alt="Logo" className="h-8 w-8" />
         </motion.div>
 
         {/* Desktop Nav */}

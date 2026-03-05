@@ -26,13 +26,13 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         greeting: 'Hola, soy',
         role: 'Ingeniera de Sistemas',
         specialization: 'Especialista en Gerencia de Proyectos',
-        description: 'Liderando la transformación digital con un enfoque en desarrollo Full Stack, seguridad de la información y metodologías ágiles.',
+        description: 'Soy desarrolladora creativa especializada en transformar desafíos en proyectos tecnológicos eficientes y bien estructurados.',
         cta: 'Trabajemos juntos',
         cv: 'Ver currículo',
       },
       about: {
         title: 'Sobre Mí',
-        content: 'Ingeniera de Sistemas con Especialización en Gerencia de Proyectos. Mi enfoque combina la excelencia técnica con una visión estratégica organizacional. Soy una apasionada de la optimización de procesos y la implementación de soluciones tecnológicas que generen un impacto real e institucional.',
+        content: "Soy Angie Puerres Caicedo, Ingeniera de Sistemas y Especialista en Gerencia de Proyectos con un enfoque sólido en el Desarrollo Web Full Stack. Trabajo bajo metodologías ágiles como Scrum para asegurar entregas eficientes y alineadas con los objetivos estratégicos.\n\nDisfruto trabajar en equipo, escuchar diferentes ideas y construir soluciones de manera colaborativa. Me caracterizo por ser organizada, responsable y perseverante; cuando asumo un reto, doy lo mejor de mí hasta verlo convertido en resultados concretos.\n\nCreo en el crecimiento continuo, en la importancia de adaptarse a los cambios y en mantener siempre una actitud proactiva. Me entusiasma participar en proyectos que generen impacto, donde pueda aportar no solo mis conocimientos, sino también mi creatividad, empatía y capacidad de liderazgo.",
         agile: 'Mentalidad Ágil',
         agileDesc: 'Experiencia trabajando bajo metodología Scrum, garantizando entregas de valor continuo y adaptabilidad.',
         security: 'Seguridad Primero',
@@ -42,8 +42,19 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         title: 'Experiencia Destacada',
         security: {
           role: 'Prácticas en Seguridad de la Información',
-          desc: 'Implementación y configuración de GLPI con Fusion Inventory en más de 600 equipos. Desarrollo de manuales de vulnerabilidades institucionales.',
-          tools: 'Herramientas: Nessus, OWASP ZAP, Skipfish, WPScan.',
+          desc: 'Se realizó Instalación, configuración y afinamiento de GLPI, seguida de su lanzamiento institucional. Se capacitó a usuarios y personal técnico para su adecuado uso. Además, se implementó una mesa de ayuda basada en las mejores prácticas de ITIL, fortaleciendo la gestión de servicios de TI.',
+          tools: 'Herramientas: GLPI, Fusion Inventory, Servidores',
+        },
+        cybersecurity: {
+          role: 'Prácticas en Seguridad de la Información',
+          desc: 'Se implementó la práctica de escaneo de vulnerabilidades en plataformas de la institución mediante el uso de herramientas de ciberseguridad, permitiendo la identificación de riesgos y vulnerabilidades en los sistemas institucionales. Se realizaron escaneos periódicos, análisis detallado de los hallazgos y clasificación de vulnerabilidades según su nivel de criticidad.',
+          tools: 'Herramientas: Nessus Tenable, OWASP ZAP, Skipfish, WPScan, Tor browser',
+        },
+        userdebug: {
+          role: 'Prácticas en Seguridad de la Información',
+          desc: 'Se realizó la depuración de cuentas en el Active Directory de la universidad y en las principales plataformas institucionales, incluyendo el sistema académico, el sistema contable y el sistema de apoyo académico TAU. Durante el proceso se validaron grupos, perfiles de usuario y correos electrónicos asociados al dominio institucional, con el fin de garantizar la correcta gestión de accesos.',
+          tools: 'Herramientas: Excel, Access, Directorio Activo',
+          extra: 'Generación de reportes de diferentes plataformas institucionales',
         }
       },
       projects: {
@@ -82,6 +93,31 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       },
       certs: {
         title: 'Certificaciones y Participaciones',
+        iso27001: {
+          title: 'ISO 27001:2022',
+          org: 'SISTEMA DE GESTIÓN EN SEGURIDAD DE LA INFORMACIÓN.',
+          year: '2026',
+        },
+        impacto: {
+          title: 'ImpActo Maker 2026',
+          org: 'Uso de Ingeligencia Artificial Generativa con impacto real.',
+          year: '2026',
+        },
+        cluster: {
+          title: 'CLUSTER TIC Nariño',
+          org: 'Participación Activa como Expositora.',
+          year: '2023',
+        },
+        ceia: {
+          title: 'CEIA-I 2023',
+          org: 'Congreso de Electronica e Informacion Aplicada.',
+          year: '2023',
+        },
+        exabre: {
+          title: 'EXABRE',
+          org: 'Proyecto Interestructurante Estrategia basada en retos.',
+          year: '2023',
+        },
       },
       contact: {
         title: 'Contacto',
@@ -101,13 +137,13 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         greeting: "Hi, I'm",
         role: 'Systems Engineer',
         specialization: 'Project Management Specialist',
-        description: 'Leading digital transformation with a focus on Full Stack development, information security, and agile methodologies.',
+        description: 'I am a creative developer specialized in transforming challenges into efficient and well-structured technological projects.',
         cta: "Let's work together",
         cv: 'View Resume',
       },
       about: {
         title: 'About Me',
-        content: 'Systems Engineer with a Specialization in Project Management. My approach combines technical excellence with a strategic organizational vision. I am passionate about process optimization and implementing technological solutions that generate real institutional impact.',
+        content: "I am Angie Puerres Caicedo, a Systems Engineer and Project Management Specialist with a solid focus on Full Stack Web Development. I work under agile methodologies like Scrum to ensure efficient deliveries aligned with strategic objectives.\n\nI enjoy working in teams, listening to different ideas, and building solutions collaboratively. I am characterized by being organized, responsible, and persevering; when I take on a challenge, I give my best until I see it converted into concrete results.\n\nI believe in continuous growth, the importance of adapting to changes, and always maintaining a proactive attitude. I am excited to participate in projects that generate impact, where I can contribute not only my knowledge but also my creativity, empathy, and leadership skills.",
         agile: 'Agile Mindset',
         agileDesc: 'Experience working under Scrum methodology, ensuring continuous value delivery and adaptability.',
         security: 'Security First',
@@ -117,8 +153,19 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         title: 'Featured Experience',
         security: {
           role: 'Information Security Intern',
-          desc: 'Implementation and configuration of GLPI with Fusion Inventory on over 600 devices. Development of institutional vulnerability manuals.',
-          tools: 'Tools: Nessus, OWASP ZAP, Skipfish, WPScan.',
+          desc: 'GLPI installation, configuration, and fine-tuning was performed, followed by its institutional launch. Users and technical staff were trained for its proper use. Additionally, a help desk was implemented based on ITIL best practices, strengthening IT service management.',
+          tools: 'Tools: GLPI, Fusion Inventory, Servers',
+        },
+        cybersecurity: {
+          role: 'Information Security Intern',
+          desc: 'Vulnerability scanning was implemented on institutional platforms using cybersecurity tools, enabling the identification of risks and vulnerabilities in institutional systems. Periodic scans were performed, detailed analysis of findings, and classification of vulnerabilities according to their criticality level.',
+          tools: 'Tools: Nessus, OWASP ZAP, Skipfish, WPScan, Tor',
+        },
+        userdebug: {
+          role: 'Information Security Intern',
+          desc: 'Account cleanup was performed in the university\'s Active Directory and in the main institutional platforms, including the academic system, the accounting system, and the TAU academic support system. During the process, groups, user profiles, and email addresses associated with the institutional domain were validated, in order to guarantee proper access management.',
+          tools: 'Tools: Excel, Access, Active Directory',
+          extra: 'Generating reports from different institutional platforms',
         }
       },
       projects: {
@@ -157,6 +204,31 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       },
       certs: {
         title: 'Certifications & Participations',
+        iso27001: {
+          title: 'ISO 27001:2022',
+          org: 'Information Security Management System.',
+          year: '2026',
+        },
+        impacto: {
+          title: 'ImpActo Maker 2026',
+          org: 'Use of Generative Artificial Intelligence with real impact.',
+          year: '2026',
+        },
+        cluster: {
+          title: 'CLUSTER TIC Nariño',
+          org: 'Active Participation as Exhibitor.',
+          year: '2023',
+        },
+        ceia: {
+          title: 'CEIA-I 2023',
+          org: 'Congress of Applied Electronics and Information.',
+          year: '2023',
+        },
+        exabre: {
+          title: 'EXABRE',
+          org: 'Interstructural Project Challenge-based Strategy.',
+          year: '2023',
+        },
       },
       contact: {
         title: 'Contact',

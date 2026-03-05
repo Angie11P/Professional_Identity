@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Download, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import curriculum from '../content/curriculum.pdf';
+
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -28,9 +30,38 @@ const Hero = () => {
           <h2 className="text-xl md:text-3xl font-medium text-white/80 mb-4">
             {t('hero.role')} | <span className="text-primary">{t('hero.specialization')}</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-white/60 mb-10 leading-relaxed">
-            {t('hero.description')}
-          </p>
+          
+          <div className="max-w-2xl mx-auto mb-10 min-h-[3rem]">
+            <motion.p 
+              className="text-lg text-white/60 leading-relaxed"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                visible: {
+                  transition: {
+                    staggerChildren: 0.03,
+                  },
+                },
+              }}
+            >
+              {t('hero.description').split('').map((char: string, index: number) => (
+                <motion.span
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0 },
+                    visible: { opacity: 1 },
+                  }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+              <motion.span
+                animate={{ opacity: [0, 1, 0] }}
+                transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
+                className="inline-block w-1 h-5 bg-primary ml-1 align-middle"
+              />
+            </motion.p>
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
@@ -43,7 +74,7 @@ const Hero = () => {
               <ChevronRight size={20} />
             </motion.a>
             <motion.a
-              href="/cv.pdf"
+              href={curriculum} target="_blank" rel="noopener noreferrer"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

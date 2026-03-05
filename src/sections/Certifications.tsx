@@ -4,7 +4,7 @@ import { Award, Users, Lightbulb, Rocket, Download, ChevronLeft, ChevronRight, B
 import { useLanguage } from '../context/LanguageContext';
 import isoCert from '../content/ISO 27001_2022.pdf';
 import impactoCert from '../content/ImpActo_Maker.pdf';
-import clusterCert from '../content/cluster_TIC.pdf';
+import clusterCert from '../content/Cluster_TIC.pdf';
 import ceiaCert from '../content/CEIA_I_2023.pdf';
 import exabreCert from '../content/EXABRE_2023.pdf';
 

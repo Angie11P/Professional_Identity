@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import python from '../img/python.png';
+import python from '../img/Python.png';
 import react from '../img/react.png';
 import javascript from '../img/javascript.png';
 import php from '../img/php.png';

@@ -16,7 +16,6 @@ import zap from "../img/zap.png";
 import skipfish from "../img/skipfish.png";
 import wpscan from "../img/wpscan.png";
 
-
 import { motion, useScroll, useTransform, useSpring } from 'motion/react';
 import { 
   Code2, Database, Wrench, 
@@ -34,22 +33,22 @@ const Skills = () => {
   const [canScrollRight, setCanScrollRight] = useState(true);
 
   const allSkills = [
-    { name: 'Python', icon: <img src={python} alt="Python" width={40} /> },
-    { name: 'React', icon:  <img src={react} alt="react" width={40} /> },
-    { name: 'JavaScript', icon: <img src={javascript} alt="JavaScript" width={40} /> },
-    { name: 'PHP', icon: <img src={php} alt="PHP" width={40} />},
-    { name: 'HTML5', icon: <img src={html} alt="HTML5" width={40} /> },
-    { name: 'CSS3', icon: <img src={css} alt="CSS3" width={40} /> },
-    { name: 'SQL', icon: <img src={sql} alt="SQL" width={40} /> },
-    { name: 'MySQL', icon: <img src={mysql} alt="MySQL" width={40} /> },
-    { name: 'PostgreSQL', icon: <img src={postgresql} alt="PostgreSQL" width={40} /> },
-    { name: 'Git & GitHub', icon: <img src={git} alt="Git & GitHub" width={40} /> },
-    { name: 'Figma', icon: <img src={figma} alt="Figma" width={40} /> },
-    { name: 'GLPI', icon: <img src={glpi} alt="GLPI" width={40} /> },
-    { name: 'Nessus', icon: <img src={nessus} alt="Nessus" width={40} /> },
-    { name: 'OWASP ZAP', icon: <img src={zap} alt="OWASP ZAP" width={40} /> },
-    { name: 'Skipfish', icon: <img src={skipfish} alt="Skipfish" width={40} /> },
-    { name: 'WPScan', icon: <img src={wpscan} alt="WPScan" width={40} /> },
+    { name: 'Python', icon: <img src={python} alt="Python" width={60} /> },
+    { name: 'React', icon:  <img src={react} alt="react" width={60} /> },
+    { name: 'HTML5', icon: <img src={html} alt="HTML5" width={60} /> },
+    { name: 'CSS3', icon: <img src={css} alt="CSS3" width={60} /> },
+    { name: 'JavaScript', icon: <img src={javascript} alt="JavaScript" width={60} /> },
+    { name: 'PHP', icon: <img src={php} alt="PHP" width={100} />},
+    { name: 'SQL', icon: <img src={sql} alt="SQL" width={60} /> },
+    { name: 'MySQL', icon: <img src={mysql} alt="MySQL" width={100} /> },
+    { name: 'PostgreSQL', icon: <img src={postgresql} alt="PostgreSQL" width={60} /> },
+    { name: 'Git & GitHub', icon: <img src={git} alt="Git & GitHub" width={60} /> },
+    { name: 'Figma', icon: <img src={figma} alt="Figma" width={60} /> },
+    { name: 'GLPI', icon: <img src={glpi} alt="GLPI" width={80} /> },
+    { name: 'Nessus Tenable', icon: <img src={nessus} alt="Nessus" width={100} /> },
+    { name: 'OWASP ZAP', icon: <img src={zap} alt="OWASP ZAP" width={60} /> },
+    { name: 'Skipfish', icon: <img src={skipfish} alt="Skipfish" width={60} /> },
+    { name: 'WPScan', icon: <img src={wpscan} alt="WPScan" width={60} /> },
   ];
 
   const checkScroll = () => {

@@ -9,6 +9,7 @@ import sql from "../img/sql.png";
 import mysql from "../img/mysql.png";
 import postgresql from "../img/postgresql.png";
 import git from "../img/git.png";
+import github from "../img/github.png";
 import figma from "../img/figma.png";
 import glpi from "../img/glpi.png";
 import nessus from "../img/nessus.png";
@@ -42,7 +43,8 @@ const Skills = () => {
     { name: 'SQL', icon: <img src={sql} alt="SQL" width={60} /> },
     { name: 'MySQL', icon: <img src={mysql} alt="MySQL" width={100} /> },
     { name: 'PostgreSQL', icon: <img src={postgresql} alt="PostgreSQL" width={60} /> },
-    { name: 'Git & GitHub', icon: <img src={git} alt="Git & GitHub" width={60} /> },
+    { name: 'Git', icon: <img src={git} alt="Git" width={60} /> },
+    { name: 'GitHub', icon: <img src={github} alt="GitHub" width={60} /> },
     { name: 'Figma', icon: <img src={figma} alt="Figma" width={60} /> },
     { name: 'GLPI', icon: <img src={glpi} alt="GLPI" width={80} /> },
     { name: 'Nessus Tenable', icon: <img src={nessus} alt="Nessus" width={100} /> },

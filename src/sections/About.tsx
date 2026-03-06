@@ -20,8 +20,8 @@ function About() {
     },
     {
       icon: <Zap className="text-primary" size={32} />,
-      title: "Full Stack",
-      desc: "Desarrollo integral de soluciones escalables y eficientes.",
+      title: t('about.fullstack'),
+      desc: t('about.fullstackDesc'),
     }
   ];
 

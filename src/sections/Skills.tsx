@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import python from '../img/Python.png';
 import react from '../img/react.png';
+import Node from '../img/node.png';
 import javascript from '../img/javascript.png';
 import php from '../img/php.png';
 import html from "../img/html.png";
@@ -36,6 +37,7 @@ const Skills = () => {
   const allSkills = [
     {name: 'Python', icon: <img src={python} alt="Python" width={60} /> },
     { name: 'React', icon:  <img src={react} alt="react" width={60} /> },
+    { name: 'Node js', icon:  <img src={Node} alt="Node" width={60} /> },
     { name: 'HTML5', icon: <img src={html} alt="HTML5" width={60} /> },
     { name: 'CSS3', icon: <img src={css} alt="CSS3" width={60} /> },
     { name: 'JavaScript', icon: <img src={javascript} alt="JavaScript" width={60} /> },

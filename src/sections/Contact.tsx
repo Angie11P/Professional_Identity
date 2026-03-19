@@ -8,8 +8,8 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: <Mail size={20} />, label: 'Email', value: 'puerresangie@gmail.com', href: 'mailto:puerresangie@gmail.com' },
-    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Angie Puerres', href: 'https://linkedin.com/in/angie-puerres-25aaa73b1' },
-    { icon: <Github size={20} />, label: 'GitHub', value: 'AngiePuerres', href: 'https://github.com/Angie11P' },
+    { icon: <Linkedin size={20} />, label: 'LinkedIn', value: 'Angie Puerres Caicedo', href: 'https://linkedin.com/in/angie-puerres-caicedo-25aaa73b1' },
+    { icon: <Github size={20} />, label: 'GitHub', value: 'Angie11P', href: 'https://github.com/Angie11P' },
     { icon: <Phone size={20} />, label: 'Teléfono', value: '+57 316 370 8167', href: 'tel:+573163708167' },
   ];
 

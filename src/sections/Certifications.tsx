@@ -7,7 +7,7 @@ import impactoCert from '../content/ImpActo_Maker.pdf';
 import clusterCert from '../content/Cluster_TIC.pdf';
 import ceiaCert from '../content/CEIA_I_2023.pdf';
 import exabreCert from '../content/EXABRE_2023.pdf';
-import iaCert from '../content/DesarrolloIA.pdf';
+import iaCert from '../content/desarrolloIA.pdf';
 
 const Certifications = () => {
   const { t } = useLanguage();

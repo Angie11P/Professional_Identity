@@ -7,7 +7,7 @@ import impactoCert from '../content/ImpActo_Maker.pdf';
 import clusterCert from '../content/Cluster_TIC.pdf';
 import ceiaCert from '../content/CEIA_I_2023.pdf';
 import exabreCert from '../content/EXABRE_2023.pdf';
-import iaCert from '../content/desarrolloIA.PDF';
+import iaCert from '../content/DesarrolloIA.pdf';
 
 const Certifications = () => {
   const { t } = useLanguage();
@@ -88,7 +88,7 @@ const Certifications = () => {
   return (
     <section className="py-24 bg-white/5 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-radial-gradient opacity-50" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -102,14 +102,14 @@ const Certifications = () => {
 
         <div className="relative group perspective-1000" style={{ perspective: '1200px' }}>
           {/* Navigation Buttons */}
-          <button 
+          <button
             onClick={() => scroll('left')}
             className={`absolute left-0 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-background/80 border border-white/10 text-white transition-all hover:bg-primary hover:text-background ${!canScrollLeft ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
           >
             <ChevronLeft size={24} />
           </button>
-          
-          <button 
+
+          <button
             onClick={() => scroll('right')}
             className={`absolute right-0 top-1/2 -translate-y-1/2 z-30 p-3 rounded-full bg-background/80 border border-white/10 text-white transition-all hover:bg-primary hover:text-background ${!canScrollRight ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
           >
@@ -117,12 +117,12 @@ const Certifications = () => {
           </button>
 
           {/* Carousel Container */}
-          <div 
+          <div
             ref={carouselRef}
             onScroll={checkScroll}
             className="flex space-x-12 overflow-x-auto scrollbar-hide pb-12 pt-4 px-12 snap-x snap-mandatory"
-            style={{ 
-              scrollbarWidth: 'none', 
+            style={{
+              scrollbarWidth: 'none',
               msOverflowStyle: 'none',
             }}
           >
@@ -133,7 +133,7 @@ const Certifications = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                whileHover={{ 
+                whileHover={{
                   z: 50,
                   rotateY: 15,
                   rotateX: -5,
@@ -145,19 +145,19 @@ const Certifications = () => {
                   transformStyle: 'preserve-3d',
                 }}
               >
-                <div 
+                <div
                   className="p-4 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors shadow-[0_0_20px_rgba(37,99,235,0.1)]"
                   style={{ transform: 'translateZ(20px)' }}
                 >
                   {item.icon}
                 </div>
-                <h3 
+                <h3
                   className="text-lg font-bold text-white/80 text-center group-hover:text-primary transition-colors"
                   style={{ transform: 'translateZ(10px)' }}
                 >
                   {item.title}
                 </h3>
-                <p 
+                <p
                   className="text-white/50 text-sm text-center"
                   style={{ transform: 'translateZ(5px)' }}
                 >
@@ -180,7 +180,7 @@ const Certifications = () => {
                     </motion.a>
                   )}
                 </div>
-                
+
                 {/* 3D Shadow effect */}
                 <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 blur-xl transition-opacity -z-10" style={{ transform: 'translateZ(-10px)' }} />
               </motion.div>

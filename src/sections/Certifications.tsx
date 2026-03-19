@@ -1,12 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { Award, Users, Lightbulb, Rocket, Download, ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
+import { Award, Users, Lightbulb, Rocket, Download, ChevronLeft, ChevronRight, BookOpen, Brain } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import isoCert from '../content/ISO 27001_2022.pdf';
 import impactoCert from '../content/ImpActo_Maker.pdf';
 import clusterCert from '../content/Cluster_TIC.pdf';
 import ceiaCert from '../content/CEIA_I_2023.pdf';
 import exabreCert from '../content/EXABRE_2023.pdf';
+import iaCert from '../content/desarrolloIA.PDF';
 
 const Certifications = () => {
   const { t } = useLanguage();
@@ -15,6 +16,13 @@ const Certifications = () => {
   const [canScrollRight, setCanScrollRight] = useState(true);
 
   const items = [
+    {
+      title: t('certs.ia.title'),
+      org: t('certs.ia.org'),
+      icon: <Brain className="text-primary" size={40} />,
+      year: t('certs.ia.year'),
+      downloadUrl: iaCert
+    },
     {
       title: t('certs.iso27001.title'),
       org: t('certs.iso27001.org'),
@@ -159,16 +167,18 @@ const Certifications = () => {
                   <span className="text-xs font-mono text-primary px-2 py-1 bg-primary/10 rounded">
                     {item.year}
                   </span>
-                  <motion.a
-                    href={item.downloadUrl}
-                    download
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="p-2 rounded-lg bg-white/5 border border-white/10 text-white hover:text-primary hover:border-primary/50 transition-all"
-                    title="Descargar Certificado"
-                  >
-                    <Download size={16} />
-                  </motion.a>
+                  {item.downloadUrl !== '#' && (
+                    <motion.a
+                      href={item.downloadUrl}
+                      download
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="p-2 rounded-lg bg-white/5 border border-white/10 text-white hover:text-primary hover:border-primary/50 transition-all"
+                      title="Descargar Certificado"
+                    >
+                      <Download size={16} />
+                    </motion.a>
+                  )}
                 </div>
                 
                 {/* 3D Shadow effect */}

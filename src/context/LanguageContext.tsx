@@ -62,28 +62,41 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       projects: {
         title: 'Proyectos Principales',
         viewCode: 'Ver Código',
+        viewSite: 'Visitar Sitio',
+        descriptionLabel: 'Descripción',
+        characteristicsLabel: 'Características de trabajo',
         prosaber: {
           title: 'PROSABER',
-          problem: 'Necesidad de centralizar y automatizar simulacros académicos tipo Saber Pro.',
-          desc: 'Plataforma web con arquitectura de roles (Admin, Docente, Estudiante). Gestión de notas y desempeño.',
-          tech: 'PHP, Python, MySQL',
+          desc: 'Plataforma web desarrollada para la gestión de simulacros académicos tipo Saber Pro. Incluye un sistema de roles (administrador, docente y estudiante) que permite la creación, aplicación y seguimiento de evaluaciones. Se enfoca en el análisis del desempeño estudiantil mediante el uso de bases de datos estructuradas.',
+          characteristics: [
+            'Participe con colaboradora en el desarrollo',
+            'Plataforma desarrollada con fines educativos'
+          ],
+          tech: 'PHP, Python, Css, MySQL',
         },
         pastosetp: {
-          title: 'PASTO SETP',
-          problem: 'Falta de un sistema centralizado para la consulta de rutas de transporte público.',
-          desc: 'Plataforma informativa para administración y consulta de rutas. Documentación técnica bajo Scrum.',
-          tech: 'React, Node.js, PostgreSQL',
+          title: 'PASTOSETP',
+          desc: 'Aplicación web informativa orientada a la consulta y administración de rutas de transporte. El proyecto incorpora modelado de bases de datos y documentación técnica bajo metodología Scrum, facilitando el acceso organizado a la información de movilidad.',
+          characteristics: [
+            'Bajo metodología Scrum',
+            'Proyecto desarrollado y presentado con fines educativos'
+          ],
+          tech: 'React, Vite.js, Supabase, Vercel',
         },
         onconnect: {
           title: 'ONCONNECT',
-          problem: 'Aislamiento y falta de seguimiento personalizado para pacientes oncológicos.',
-          desc: 'Aplicación para seguimiento médico, gestión de citas y redes de apoyo entre usuarios.',
+          desc: 'Aplicación web dirigida a pacientes oncológicos que permite el registro personalizado, seguimiento de la enfermedad, gestión de citas y medicamentos. También integra espacios de apoyo entre usuarios y acceso a información médica relevante, con un enfoque social y centrado en el usuario.',
+          characteristics: [
+            'Bajo metodología Scrum'
+          ],
           tech: 'React, Firebase, Tailwind',
         },
         nariñoemplea: {
           title: 'NARIÑO EMPLEA',
-          problem: 'Dificultad en la búsqueda de empleo local de forma eficiente.',
-          desc: 'Plataforma de búsqueda de empleo regional desarrollada bajo metodología Scrum.',
+          desc: 'Plataforma web diseñada para conectar personas en búsqueda de empleo con empresas en Nariño. Facilita la publicación y consulta de ofertas laborales, mejorando la accesibilidad a oportunidades mediante una solución digital estructurada.',
+          characteristics: [
+            'Bajo metodología Scrum'
+          ],
           tech: 'React, Express, MySQL',
         }
       },
@@ -95,6 +108,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       },
       certs: {
         title: 'Certificaciones y Participaciones',
+        ia: {
+          title: 'AI DEVELOPMENT BIG SCHOOL',
+          org: 'Certificación en desarrollo con IA de 0 a producción',
+          year: '2026',
+        },
         iso27001: {
           title: 'ISO 27001:2022',
           org: 'SISTEMA DE GESTIÓN EN SEGURIDAD DE LA INFORMACIÓN.',
@@ -175,28 +193,41 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       projects: {
         title: 'Main Projects',
         viewCode: 'View Code',
+        viewSite: 'Visit Site',
+        descriptionLabel: 'Description',
+        characteristicsLabel: 'Work Characteristics',
         prosaber: {
           title: 'PROSABER',
-          problem: 'Need to centralize and automate Saber Pro type academic drills.',
-          desc: 'Web platform with role architecture (Admin, Teacher, Student). Grade and performance management.',
+          desc: 'Web platform developed for the management of Saber Pro type academic drills. It includes a role system (administrator, teacher, and student) that allows the creation, application, and tracking of evaluations. It focuses on the analysis of student performance through structured databases.',
+          characteristics: [
+            'Participated as a collaborator in development',
+            'Platform developed for educational purposes'
+          ],
           tech: 'PHP, Python, MySQL',
         },
         pastosetp: {
           title: 'PASTO SETP',
-          problem: 'Lack of a centralized system for public transport route consultation.',
-          desc: 'Informative platform for route administration and consultation. Technical documentation under Scrum.',
+          desc: 'Informative web application aimed at consulting and managing transport routes. The project incorporates database modeling and technical documentation under the Scrum methodology, facilitating organized access to mobility information.',
+          characteristics: [
+            'Under Scrum methodology',
+            'Project developed and presented for educational purposes'
+          ],
           tech: 'React, Node.js, PostgreSQL',
         },
         onconnect: {
           title: 'ONCONNECT',
-          problem: 'Isolation and lack of personalized tracking for oncology patients.',
-          desc: 'Application for medical tracking, appointment management, and support networks among users.',
+          desc: 'Web application aimed at oncology patients that allows personalized registration, disease tracking, appointment, and medication management. It also integrates support spaces between users and access to relevant medical information, with a social and user-centered focus.',
+          characteristics: [
+            'Under Scrum methodology'
+          ],
           tech: 'React, Firebase, Tailwind',
         },
         nariñoemplea: {
           title: 'NARIÑO EMPLEA',
-          problem: 'Difficulty in efficiently searching for local employment.',
-          desc: 'Regional job search platform developed under Scrum methodology.',
+          desc: 'Web platform designed to connect job seekers with companies in Nariño. It facilitates the publication and consultation of job offers, improving accessibility to opportunities through a structured digital solution.',
+          characteristics: [
+            'Under Scrum methodology'
+          ],
           tech: 'React, Express, MySQL',
         }
       },
@@ -208,6 +239,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       },
       certs: {
         title: 'Certifications & Participations',
+        ia: {
+          title: 'AI DEVELOPMENT BIG SCHOOL',
+          org: 'Certification in AI development from 0 to production',
+          year: '2026',
+        },
         iso27001: {
           title: 'ISO 27001:2022',
           org: 'Information Security Management System.',
